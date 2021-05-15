@@ -31,6 +31,16 @@ public class Login_screen extends AppCompatActivity {
             switch (biometricManager.canAuthenticate()){
                 case androidx.biometric.BiometricManager.BIOMETRIC_SUCCESS:              //accès OK
                     msg_txt.setText("Connexion Biométrique activée");
+
+                    setContentView(R.layout.activity_login_screen);
+                    button = (Button) findViewById(R.id.login_magic);
+                    button.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            openNewActivity();
+                        }
+                    });
+
                     break;
 
                 case androidx.biometric.BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE:     // de matériel
@@ -89,7 +99,7 @@ public class Login_screen extends AppCompatActivity {
 
             androidx.biometric.BiometricPrompt.PromptInfo promptInfo = new BiometricPrompt.PromptInfo.Builder()
                     .setTitle("Login")
-                    .setDescription("User your fingerprint tocall  login to your app")
+                    .setDescription("User your fingerprint to call  login to your app")
                     .setNegativeButtonText("cancel")
                     .build();
 
@@ -101,14 +111,14 @@ public class Login_screen extends AppCompatActivity {
             });
 
         //super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_screen);
-        button = (Button) findViewById(R.id.login_magic);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openNewActivity();
-            }
-        });
+//        setContentView(R.layout.activity_login_screen);
+//        button = (Button) findViewById(R.id.login_magic);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openNewActivity();
+//            }
+//        });
     }
     public void openNewActivity(){
         Intent intent = new Intent(this, MainActivity.class);

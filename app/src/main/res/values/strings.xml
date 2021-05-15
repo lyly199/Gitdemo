@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Hong Lee</string>
     <string name="main_welcom">Bienvenue</string>
-    <string name="login_hello">Ici On Lit QR-Code </string>
+    <string name="login_hello">Bienvenue</string>
     <string name="login_msg">Connectez-vous</string>
     <string name="login_new_user">Création de compte</string>
     <string name="login_new_mdp">Mot de passe oublié?</string>
@@ -10,7 +10,7 @@
     <string name="login_mdp">Mot de passe</string>
     <string name="Full_name">Nom entier</string>
     <string name="Username">Nom entier</string>
-    <string name="sign_welcom">Bienvenue</string>
+    <string name="sign_welcom">Ici on lit les QR-Codes</string>
     <string name="Button_go">GO</string>
     <string name="Logo">Logo societe</string>
     <string name="Finger_msg_ok">Connexion biométrique activée</string>
