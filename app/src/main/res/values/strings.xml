@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Hong Lee</string>
     <string name="main_welcom">Bienvenue</string>
-    <string name="login_hello">Bienvenue sur Hong Lee </string>
+    <string name="login_hello">Ici On Lit QR-Code </string>
     <string name="login_msg">Connectez-vous</string>
     <string name="login_new_user">Création de compte</string>
     <string name="login_new_mdp">Mot de passe oublié?</string>
