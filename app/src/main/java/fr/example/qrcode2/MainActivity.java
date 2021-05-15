@@ -89,4 +89,5 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "OOps rien scané", Toast.LENGTH_SHORT).show();
         }
     }
+
 }

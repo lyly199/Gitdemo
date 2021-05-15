@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.biometric.BiometricManager;
 import androidx.biometric.BiometricPrompt;
 import androidx.core.content.ContextCompat;
+import android.content.Intent;
 
 import android.os.Bundle;
 import android.view.View;
@@ -13,9 +14,11 @@ import android.widget.TextView;
 import java.util.concurrent.Executor;
 
 public class Login_screen extends AppCompatActivity {
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
 
@@ -67,9 +70,9 @@ public class Login_screen extends AppCompatActivity {
             androidx.biometric.BiometricPrompt biometricPrompt = new androidx.biometric.BiometricPrompt(Login_screen.this ,executor, new androidx.biometric.BiometricPrompt.AuthenticationCallback() {
 
 
-                //        @Override
-                //        public void onAuthenticationError(int errorCode, @NonNull @NotNull CharSequence errString) {
-                //           super.onAuthenticationError(errorCode, errString);
+                //@Override
+                //     public void onAuthenticationError(int errorCode, @NonNull @NotNull CharSequence errString) {
+                //     super.onAuthenticationError(errorCode, errString);
                 //        }
 
                 //        @Override
@@ -97,5 +100,19 @@ public class Login_screen extends AppCompatActivity {
                 }
             });
 
+        //super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        button = (Button) findViewById(R.id.login_magic);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNewActivity();
+            }
+        });
     }
+    public void openNewActivity(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }
