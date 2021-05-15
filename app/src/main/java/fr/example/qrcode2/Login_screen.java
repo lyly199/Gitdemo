@@ -101,7 +101,7 @@ public class Login_screen extends AppCompatActivity {
             });
 
         //super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login_screen);
         button = (Button) findViewById(R.id.login_magic);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
