@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_screen"
+    android:fontFamily="sans-serif-condensed-medium"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:contentDescription="@string/Logo"
+        android:src="@drawable/ic_launcher_foreground"/>
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_hello"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/sign_welcom"
+        android:textColor="@color/red"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:hint="@string/login_login"
+            android:textColor="@color/red"
+            android:textColorHint="@color/red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textColorHighlight="@color/red"
+                android:textColorHint="@color/red"
+                android:textColorLink="@color/red" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:hint="@string/login_mdp"
+            android:textColorHint="@color/red"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@color/red_background"
+            android:fontFamily="sans-serif-condensed-medium"
+            app:backgroundTint="@color/white"
+            android:textColor="@color/red"
+            android:text="@string/login_new_mdp"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/login_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/Button_go"
+            android:textColor="@color/red"
+            />
+
+        <Button
+            android:id="@+id/login_magic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/login_finger_msg"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            app:backgroundTint="@color/white"
+            app:icon="@drawable/ic_baseline_fingerprint"
+            app:iconTint="@color/red"
+            app:strokeColor="@color/white" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="1dp"
+            android:background="@color/red"
+            android:textColor="@color/red"
+            app:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/login_new_user"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>
