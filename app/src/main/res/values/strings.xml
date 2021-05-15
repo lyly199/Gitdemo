@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">QRCode2</string>
+    <string name="app_name">Hong Lee</string>
+    <string name="main_welcom">Bienvenue</string>
+    <string name="login_hello">Pour partir à l\'Aventure</string>
+    <string name="login_msg">Connectez-vous</string>
+    <string name="login_new_user">Création de compte</string>
+    <string name="login_new_mdp">Mot de passe oublié?</string>
+    <string name="login_login">Login</string>
+    <string name="login_finger_msg">Authentification Biometrique</string>
+    <string name="login_mdp">Mot de passe</string>
+    <string name="Full_name">Nom entier</string>
+    <string name="Username">Nom entier</string>
+    <string name="sign_welcom">Bienvenue</string>
+    <string name="Button_go">GO</string>
+    <string name="Logo">Logo societe</string>
+    <string name="Finger_msg_ok">Connexion biométrique activée</string>
+    <string name="Sign_msg">Pour Consulter votre solde</string>
 </resources>
