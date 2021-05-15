@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Assigne variables
+        //Affectation des variables pour scan
         btScan = findViewById(R.id.bt_scan);
 
         btScan.setOnClickListener(new View.OnClickListener() {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 IntentIntegrator intentIntegrator = new IntentIntegrator(
                         MainActivity.this
                 );
-                // masg d information
+                // Display Message Scan
                 intentIntegrator.setPrompt("For flash use volume up key");
 
                 // Son pour la scan
@@ -53,8 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -66,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Check condition
         if (intentResult.getContents() != null) {
-            // si null alerte
+            // Msg => Null
             AlertDialog.Builder builder = new AlertDialog.Builder(
                     MainActivity.this
             );
