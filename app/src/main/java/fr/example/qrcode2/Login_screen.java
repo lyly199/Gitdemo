@@ -32,14 +32,14 @@ public class Login_screen extends AppCompatActivity {
                 case androidx.biometric.BiometricManager.BIOMETRIC_SUCCESS:              //accès OK
                     msg_txt.setText("Connexion Biométrique activée");
 
-                    setContentView(R.layout.activity_login_screen);
-                    button = (Button) findViewById(R.id.login_magic);
-                    button.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            openNewActivity();
-                        }
-                    });
+//                    setContentView(R.layout.activity_login_screen);
+//                    button = (Button) findViewById(R.id.login_magic);
+//                    button.setOnClickListener(new View.OnClickListener() {
+//                        @Override
+//                        public void onClick(View v) {
+//                            openNewActivity();
+//             }
+//                     });
 
                     break;
 
@@ -120,9 +120,9 @@ public class Login_screen extends AppCompatActivity {
 //            }
 //        });
     }
-    public void openNewActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
+//    public void openNewActivity(){
+//        Intent intent = new Intent(this, MainActivity.class);
+//        startActivity(intent);
+//    }
 
 }
